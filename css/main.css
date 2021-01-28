@@ -87,10 +87,101 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
+  box-sizing: border-box;
   margin:0 auto;
-  width: 70vw;
   background-color: papayawhip;
+
 }
+
+header{
+  width:100%;
+  height:10%;
+}
+
+section{
+  width:100%;
+  height:10%;
+
+}
+
+.row {
+  display:grid;
+  width: 100%;
+  height:100%;
+  grid-template-rows:1fr;
+  grid-template-columns:repeat(2,1fr);
+  justify-content: center;
+  border:black solid 2px;
+  grid-gap: 20px;
+  margin-bottom:10px;
+}
+
+
+.col{
+  border:black solid 2px;
+  margin:20px;
+  align-items: center;
+
+}
+
+.heroimg > .row{
+  
+  grid-template-columns:1fr;
+}
+
+.page-intro > .row{
+  grid-template-columns:1fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.contents-title > .row{
+  grid-template-columns:1fr;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.page-contents >.row{
+  grid-template-columns:repeat(4,1fr);
+}
+
+
+.page-contents >.col{
+  border: black solid 5px;
+}
+
+.page-midle-contents>.row{
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: 1fr;
+
+}
+
+.page-bottom-contents>.row{
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows:repeat(2,1fr);
+
+}
+
+.sponser>.row{
+  grid-template-columns:repeat(5,1fr);
+  grid-template-rows:repeat(1,1fr);
+}
+
+.footer-profile>.row{
+  grid-template-columns:repeat(1,1fr);
+  grid-template-rows:repeat(1,1fr);
+}
+
+.page-footer-four-columns>.row{
+  grid-template-columns:repeat(4,1fr);
+}
+.color-bar>.row{
+  grid-template-columns:repeat(5,1fr);
+
+  
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
